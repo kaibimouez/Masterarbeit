@@ -1,0 +1,129 @@
+2020-03-12 12:13:19,132{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+ {:concurrency 5,
+ :db
+ #object[jepsen.etcd$db$reify__2629 0xa6dffdb "jepsen.etcd$db$reify__2629@a6dffdb"],
+ :name "Cassandra_100_10",
+ :start-time
+ #object[org.joda.time.DateTime 0x3ccfac29 "2020-03-12T12:13:19.000Z"],
+ :net
+ #object[jepsen.net$reify__5331 0x39f4a7c4 "jepsen.net$reify__5331@39f4a7c4"],
+ :client
+ #object[jepsen.etcd$client$reify__2635 0xfd5689d "jepsen.etcd$client$reify__2635@fd5689d"],
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier 0x4ede035e "java.util.concurrent.CyclicBarrier@4ede035e"],
+ :ssh
+ {:username "root",
+  :password "root",
+  :strict-host-key-checking false,
+  :private-key-path nil},
+ :checker
+ #object[jepsen.checker$compose$reify__4889 0x77ce8bc5 "jepsen.checker$compose$reify__4889@77ce8bc5"],
+ :nemesis
+ #object[jepsen.nemesis$partitioner$reify__5445 0x92fd091 "jepsen.nemesis$partitioner$reify__5445@92fd091"],
+ :active-histories #<Atom@3a9c11fb: #{}>,
+ :nodes ["n1" "n2" "n3" "n4" "n5"],
+ :test-count 10,
+ :generator
+ (gen/timelimit 100 (gen/concat [(gen/on #{:nemesis} (gen/seqone ((gen/delayfn #object[clojure.core$constantly$fn__5657 0x4ab9d160 "clojure.core$constantly$fn__5657@4ab9d160"] (gen/gvoid)) {:type :info, :f :start} (gen/delayfn #object[clojure.core$constantly$fn__5657 0x35554635 "clojure.core$constantly$fn__5657@35554635"] (gen/gvoid)) {:type :info, :f :stop} (gen/delayfn #object[clojure.core$constantly$fn__5657 0x4ab9d160 "clojure.core$constantly$fn__5657@4ab9d160"] (gen/gvoid)) {:type :info, :f :start} (gen/delayfn #object[clojure.core$constantly$fn__5657 0x35554635 "clojure.core$constantly$fn__5657@35554635"] (gen/gvoid)) {:type :info, :f :stop}))) (gen/on #object[clojure.core$complement$fn__5654 0x74431832 "clojure.core$complement$fn__5654@74431832"] #object[jepsen.independent$concurrent_generator$reify__2336 0x70592729 "jepsen.independent$concurrent_generator$reify__2336@70592729"])])),
+ :os
+ #object[jepsen.os.debian.Debian 0x2fdf7da2 "jepsen.os.debian.Debian@2fdf7da2"],
+ :time-limit 100}
+
+2020-03-12 12:13:19,705{GMT}	INFO	[jepsen node n1] jepsen.os.debian: n1 setting up debian
+2020-03-12 12:13:19,705{GMT}	INFO	[jepsen node n2] jepsen.os.debian: n2 setting up debian
+2020-03-12 12:13:19,711{GMT}	INFO	[jepsen node n3] jepsen.os.debian: n3 setting up debian
+2020-03-12 12:13:19,711{GMT}	INFO	[jepsen node n4] jepsen.os.debian: n4 setting up debian
+2020-03-12 12:13:19,715{GMT}	INFO	[jepsen node n5] jepsen.os.debian: n5 setting up debian
+2020-03-12 12:13:43,968{GMT}	INFO	[jepsen node n2] jepsen.os.debian: Installing #{libzip4}
+2020-03-12 12:13:47,576{GMT}	WARN	[jepsen node n4] jepsen.control: Encountered error with conn [:control "n4"]; reopening
+2020-03-12 12:13:48,838{GMT}	WARN	[jepsen node n4] jepsen.control: Encountered error with conn [:control "n4"]; reopening
+2020-03-12 12:13:51,993{GMT}	WARN	[jepsen node n5] jepsen.control: Encountered error with conn [:control "n5"]; reopening
+2020-03-12 12:13:55,495{GMT}	WARN	[jepsen node n3] jepsen.control: Encountered error with conn [:control "n3"]; reopening
+2020-03-12 12:13:55,501{GMT}	WARN	[main] jepsen.core: Test crashed!
+java.util.concurrent.ExecutionException: clojure.lang.ExceptionInfo: throw+: {:type :jepsen.control/nonzero-exit, :cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :exit -1, :out "Ign http://deb.debian.org jessie InRelease\nHit http://deb.debian.org jessie-updates InRelease\nHit http://security.debian.org jessie/updates InRelease\nHit http://deb.debian.org jessie Release.gpg\nHit http://deb.debian.org jessie Release\nGet:1 http://deb.debian.org jessie-updates/main amd64 Packages [20 B]\nGet:2 http://deb.debian.org jessie/main amd64 Packages [9098 kB]\nGet:3 http://security.debian.org jessie/updates/main amd64 Packages [947 kB]\n", :err "", :host "n1", :action {:cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :in "root\n"}} {:type :jepsen.control/nonzero-exit, :cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :exit -1, :out "Ign http://deb.debian.org jessie InRelease\nHit http://deb.debian.org jessie-updates InRelease\nHit http://security.debian.org jessie/updates InRelease\nHit http://deb.debian.org jessie Release.gpg\nHit http://deb.debian.org jessie Release\nGet:1 http://deb.debian.org jessie-updates/main amd64 Packages [20 B]\nGet:2 http://deb.debian.org jessie/main amd64 Packages [9098 kB]\nGet:3 http://security.debian.org jessie/updates/main amd64 Packages [947 kB]\n", :err "", :host "n1", :action {:cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :in "root\n"}}
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_242]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_242]
+	at clojure.core$deref_future.invokeStatic(core.clj:2300) ~[clojure-1.10.0.jar:na]
+	at clojure.core$future_call$reify__8439.deref(core.clj:6974) ~[clojure-1.10.0.jar:na]
+	at clojure.core$deref.invokeStatic(core.clj:2320) ~[clojure-1.10.0.jar:na]
+	at clojure.core$deref.invoke(core.clj:2306) ~[clojure-1.10.0.jar:na]
+	at clojure.core$map$fn__5851.invoke(core.clj:2753) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.LazySeq.sval(LazySeq.java:42) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.LazySeq.seq(LazySeq.java:51) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.RT.seq(RT.java:531) ~[clojure-1.10.0.jar:na]
+	at clojure.core$seq__5387.invokeStatic(core.clj:137) ~[clojure-1.10.0.jar:na]
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:24) ~[clojure-1.10.0.jar:na]
+	at clojure.core.protocols$fn__8131.invokeStatic(protocols.clj:75) ~[clojure-1.10.0.jar:na]
+	at clojure.core.protocols$fn__8131.invoke(protocols.clj:75) ~[clojure-1.10.0.jar:na]
+	at clojure.core.protocols$fn__8073$G__8068__8086.invoke(protocols.clj:13) ~[clojure-1.10.0.jar:na]
+	at clojure.core$reduce.invokeStatic(core.clj:6828) ~[clojure-1.10.0.jar:na]
+	at clojure.core$into.invokeStatic(core.clj:6895) ~[clojure-1.10.0.jar:na]
+	at clojure.core$into.invoke(core.clj:6887) ~[clojure-1.10.0.jar:na]
+	at jepsen.control$on_nodes.invokeStatic(control.clj:385) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$on_nodes.invoke(control.clj:369) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$on_nodes.invokeStatic(control.clj:374) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$on_nodes.invoke(control.clj:369) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.core$run_BANG_$fn__5703.invoke(core.clj:549) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.core$run_BANG_.invokeStatic(core.clj:538) [jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.core$run_BANG_.invoke(core.clj:467) [jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.cli$single_test_cmd$fn__6411.invoke(cli.clj:362) [jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.cli$run_BANG_.invokeStatic(cli.clj:299) [jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.cli$run_BANG_.invoke(cli.clj:229) [jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.etcd$_main.invokeStatic(etcd.clj:191) [na:na]
+	at jepsen.etcd$_main.doInvoke(etcd.clj:187) [na:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:482) [clojure-1.10.0.jar:na]
+	at clojure.lang.Var.invoke(Var.java:406) [clojure-1.10.0.jar:na]
+	at user$eval140.invokeStatic(form-init1378667305482381327.clj:1) [na:na]
+	at user$eval140.invoke(form-init1378667305482381327.clj:1) [na:na]
+	at clojure.lang.Compiler.eval(Compiler.java:7176) [clojure-1.10.0.jar:na]
+	at clojure.lang.Compiler.eval(Compiler.java:7166) [clojure-1.10.0.jar:na]
+	at clojure.lang.Compiler.load(Compiler.java:7635) [clojure-1.10.0.jar:na]
+	at clojure.lang.Compiler.loadFile(Compiler.java:7573) [clojure-1.10.0.jar:na]
+	at clojure.main$load_script.invokeStatic(main.clj:452) [clojure-1.10.0.jar:na]
+	at clojure.main$init_opt.invokeStatic(main.clj:454) [clojure-1.10.0.jar:na]
+	at clojure.main$init_opt.invoke(main.clj:454) [clojure-1.10.0.jar:na]
+	at clojure.main$initialize.invokeStatic(main.clj:485) [clojure-1.10.0.jar:na]
+	at clojure.main$null_opt.invokeStatic(main.clj:519) [clojure-1.10.0.jar:na]
+	at clojure.main$null_opt.invoke(main.clj:516) [clojure-1.10.0.jar:na]
+	at clojure.main$main.invokeStatic(main.clj:598) [clojure-1.10.0.jar:na]
+	at clojure.main$main.doInvoke(main.clj:561) [clojure-1.10.0.jar:na]
+	at clojure.lang.RestFn.applyTo(RestFn.java:137) [clojure-1.10.0.jar:na]
+	at clojure.lang.Var.applyTo(Var.java:705) [clojure-1.10.0.jar:na]
+	at clojure.main.main(main.java:37) [clojure-1.10.0.jar:na]
+Caused by: clojure.lang.ExceptionInfo: throw+: {:type :jepsen.control/nonzero-exit, :cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :exit -1, :out "Ign http://deb.debian.org jessie InRelease\nHit http://deb.debian.org jessie-updates InRelease\nHit http://security.debian.org jessie/updates InRelease\nHit http://deb.debian.org jessie Release.gpg\nHit http://deb.debian.org jessie Release\nGet:1 http://deb.debian.org jessie-updates/main amd64 Packages [20 B]\nGet:2 http://deb.debian.org jessie/main amd64 Packages [9098 kB]\nGet:3 http://security.debian.org jessie/updates/main amd64 Packages [947 kB]\n", :err "", :host "n1", :action {:cmd "sudo -S -u root bash -c \"cd /; apt-get update\"", :in "root\n"}}
+	at slingshot.support$stack_trace.invoke(support.clj:201) ~[knossos-0.3.4.jar:na]
+	at jepsen.control$throw_on_nonzero_exit.invokeStatic(control.clj:127) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$throw_on_nonzero_exit.invoke(control.clj:122) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$exec_STAR_.invokeStatic(control.clj:163) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$exec_STAR_.doInvoke(control.clj:160) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at clojure.lang.RestFn.applyTo(RestFn.java:137) [clojure-1.10.0.jar:na]
+	at clojure.core$apply.invokeStatic(core.clj:665) ~[clojure-1.10.0.jar:na]
+	at clojure.core$apply.invoke(core.clj:660) ~[clojure-1.10.0.jar:na]
+	at jepsen.control$exec.invokeStatic(control.clj:179) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.control$exec.doInvoke(control.clj:173) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:421) [clojure-1.10.0.jar:na]
+	at jepsen.os.debian$update_BANG_.invokeStatic(debian.clj:37) ~[na:na]
+	at jepsen.os.debian$update_BANG_.invoke(debian.clj:34) ~[na:na]
+	at jepsen.os.debian$maybe_update_BANG_.invokeStatic(debian.clj:43) ~[na:na]
+	at jepsen.os.debian$maybe_update_BANG_.invoke(debian.clj:39) ~[na:na]
+	at jepsen.os.debian.Debian.setup_BANG_(debian.clj:146) ~[na:na]
+	at jepsen.os$fn__2294$G__2288__2298.invoke(os.clj:4) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at jepsen.os$fn__2294$G__2287__2303.invoke(os.clj:4) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at clojure.core$partial$fn__5824.invoke(core.clj:2625) ~[clojure-1.10.0.jar:na]
+	at jepsen.control$on_nodes$fn__2893.invoke(control.clj:384) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at clojure.lang.AFn.applyToHelper(AFn.java:154) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.AFn.applyTo(AFn.java:144) ~[clojure-1.10.0.jar:na]
+	at clojure.core$apply.invokeStatic(core.clj:665) ~[clojure-1.10.0.jar:na]
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973) ~[clojure-1.10.0.jar:na]
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.RestFn.applyTo(RestFn.java:142) [clojure-1.10.0.jar:na]
+	at clojure.core$apply.invokeStatic(core.clj:669) ~[clojure-1.10.0.jar:na]
+	at clojure.core$bound_fn_STAR_$fn__5734.doInvoke(core.clj:2003) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:408) [clojure-1.10.0.jar:na]
+	at jepsen.util$real_pmap$launcher__2044$fn__2045.invoke(util.clj:50) ~[jepsen-0.1.13-SNAPSHOT.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__5739.invoke(core.clj:2030) ~[clojure-1.10.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) ~[clojure-1.10.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_242]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_242]

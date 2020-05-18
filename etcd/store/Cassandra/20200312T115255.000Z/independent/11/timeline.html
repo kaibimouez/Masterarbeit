@@ -1,0 +1,4038 @@
+<html><head><style>.ops        { position: absolute; }
+.op         { position: absolute; padding: 2px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); }
+.op.invoke  { background: #eeeeee; }
+.op.ok      { background: #6DB6FE; }
+.op.info    { background: #FFAA26; }
+.op.fail    { background: #FEB5DA; }
+.op:target  { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+</style></head><body><div><a href="/">jepsen</a> / <a href="/files/Cassandra">Cassandra</a> / <a href="/files/Cassandra/20200312T115255.000Z">20200312T115255.000Z</a> / <a href="/files/Cassandra/20200312T115255.000Z/">independent</a> / <a href="/files/Cassandra/20200312T115255.000Z/independent/11">11</a></div><h1>Cassandra key 11</h1><div class="ops"><a href="#i2130"><div class="op info" id="i2130" style="width:100;left:0;top:0;height:16" title="Msg: nil
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:05.232Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 10232839700,
+ :index 2130,
+ :sub-index 0}
+">:nemesis :start </div></a><a href="#i2153"><div class="op info" id="i2153" style="width:100;left:0;top:16;height:16" title="Msg: [:isolated {&quot;n5&quot; #{&quot;n2&quot; &quot;n1&quot; &quot;n4&quot;}, &quot;n3&quot; #{&quot;n2&quot; &quot;n1&quot; &quot;n4&quot;}, &quot;n2&quot; #{&quot;n5&quot; &quot;n3&quot;}, &quot;n1&quot; #{&quot;n5&quot; &quot;n3&quot;}, &quot;n4&quot; #{&quot;n5&quot; &quot;n3&quot;}}]
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:05.361Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 10361981600,
+ :value [:isolated
+         {&quot;n5&quot; #{&quot;n2&quot; &quot;n1&quot; &quot;n4&quot;},
+          &quot;n3&quot; #{&quot;n2&quot; &quot;n1&quot; &quot;n4&quot;},
+          &quot;n2&quot; #{&quot;n5&quot; &quot;n3&quot;},
+          &quot;n1&quot; #{&quot;n5&quot; &quot;n3&quot;},
+          &quot;n4&quot; #{&quot;n5&quot; &quot;n3&quot;}}],
+ :index 2153,
+ :sub-index 1}
+">:nemesis :start <br /></div></a><a href="#i4387"><div class="op info" id="i4387" style="width:100;left:0;top:32;height:16" title="Msg: nil
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:15.362Z
+
+Op:
+{:type :info,
+ :f :stop,
+ :process :nemesis,
+ :time 20362306400,
+ :index 4387,
+ :sub-index 2}
+">:nemesis :stop </div></a><a href="#i4421"><div class="op info" id="i4421" style="width:100;left:0;top:48;height:16" title="Msg: :network-healed
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:15.527Z
+
+Op:
+{:type :info,
+ :f :stop,
+ :process :nemesis,
+ :time 20527932800,
+ :value :network-healed,
+ :index 4421,
+ :sub-index 3}
+">:nemesis :stop <br /></div></a><a href="#i6603"><div class="op info" id="i6603" style="width:100;left:1484;top:64;height:9712" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.116Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3266,
+ :time 30116716800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6603,
+ :sub-index 5}
+">3266 :write 3</div></a><a href="#i6607"><div class="op info" id="i6607" style="width:100;left:1696;top:112;height:9664" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.142Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3270,
+ :time 30142635600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6607,
+ :sub-index 9}
+">3270 :read </div></a><a href="#i6608"><div class="op info" id="i6608" style="width:100;left:5724;top:96;height:9680" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.143Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3332,
+ :time 30143219100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6608,
+ :sub-index 10}
+">3332 :read </div></a><a href="#i6610"><div class="op info" id="i6610" style="width:100;left:106;top:128;height:9648" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.147Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3203,
+ :time 30147272100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6610,
+ :sub-index 11}
+">3203 :cas [3 1]</div></a><a href="#i6613"><div class="op info" id="i6613" style="width:100;left:14840;top:192;height:9584" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.157Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3439,
+ :time 30157764900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6613,
+ :sub-index 13}
+">3439 :read </div></a><a href="#i6615"><div class="op info" id="i6615" style="width:100;left:1802;top:224;height:9552" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.176Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3271,
+ :time 30176236300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6615,
+ :sub-index 15}
+">3271 :cas [0 1]</div></a><a href="#i6617"><div class="op info" id="i6617" style="width:100;left:6148;top:256;height:9520" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.190Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3337,
+ :time 30190860800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6617,
+ :sub-index 17}
+">3337 :read </div></a><a href="#i6619"><div class="op info" id="i6619" style="width:100;left:212;top:288;height:9488" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.199Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 2],
+ :process 3208,
+ :time 30199516700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6619,
+ :sub-index 19}
+">3208 :cas [1 2]</div></a><a href="#i6621"><div class="op info" id="i6621" style="width:100;left:2014;top:320;height:9456" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.204Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 2],
+ :process 3275,
+ :time 30204905400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6621,
+ :sub-index 21}
+">3275 :cas [0 2]</div></a><a href="#i6623"><div class="op info" id="i6623" style="width:100;left:15370;top:352;height:9424" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.215Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 2],
+ :process 3444,
+ :time 30215843000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6623,
+ :sub-index 23}
+">3444 :cas [1 2]</div></a><a href="#i6627"><div class="op info" id="i6627" style="width:100;left:2120;top:384;height:9392" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.228Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3276,
+ :time 30228638300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6627,
+ :sub-index 27}
+">3276 :read </div></a><a href="#i6628"><div class="op info" id="i6628" style="width:100;left:6572;top:400;height:9376" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.230Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3342,
+ :time 30230581600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6628,
+ :sub-index 28}
+">3342 :read </div></a><a href="#i6629"><div class="op info" id="i6629" style="width:100;left:318;top:416;height:9360" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.235Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 4],
+ :process 3213,
+ :time 30235563600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6629,
+ :sub-index 29}
+">3213 :cas [2 4]</div></a><a href="#i6631"><div class="op info" id="i6631" style="width:100;left:15900;top:480;height:9296" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.243Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3449,
+ :time 30243456400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6631,
+ :sub-index 31}
+">3449 :write 0</div></a><a href="#i6633"><div class="op info" id="i6633" style="width:100;left:16430;top:512;height:9264" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.255Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3454,
+ :time 30255789700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6633,
+ :sub-index 33}
+">3454 :read </div></a><a href="#i6635"><div class="op info" id="i6635" style="width:100;left:2332;top:544;height:9232" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.267Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3280,
+ :time 30267206900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6635,
+ :sub-index 35}
+">3280 :write 3</div></a><a href="#i6638"><div class="op info" id="i6638" style="width:100;left:424;top:576;height:9200" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.278Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3218,
+ :time 30278699500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6638,
+ :sub-index 38}
+">3218 :read </div></a><a href="#i6639"><div class="op info" id="i6639" style="width:100;left:6996;top:592;height:9184" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.280Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3347,
+ :time 30280381100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6639,
+ :sub-index 39}
+">3347 :write 0</div></a><a href="#i6641"><div class="op info" id="i6641" style="width:100;left:2438;top:640;height:9136" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.291Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3281,
+ :time 30291862000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6641,
+ :sub-index 41}
+">3281 :cas [0 1]</div></a><a href="#i6645"><div class="op info" id="i6645" style="width:100;left:7420;top:672;height:9104" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.314Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3352,
+ :time 30314158500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6645,
+ :sub-index 45}
+">3352 :read </div></a><a href="#i6647"><div class="op info" id="i6647" style="width:100;left:530;top:688;height:9088" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.318Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3223,
+ :time 30318752300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6647,
+ :sub-index 47}
+">3223 :write 1</div></a><a href="#i6648"><div class="op info" id="i6648" style="width:100;left:16960;top:704;height:9072" title="Dur: 21 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.330Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3459,
+ :time 30330070300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6648,
+ :sub-index 48}
+">3459 :write 1</div></a><a href="#i6649"><div class="op info" id="i6649" style="width:100;left:2650;top:736;height:9040" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.330Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3285,
+ :time 30330174200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6649,
+ :sub-index 49}
+">3285 :write 3</div></a><a href="#i6651"><div class="op info" id="i6651" style="width:100;left:2756;top:800;height:8976" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.338Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3286,
+ :time 30338439000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6651,
+ :sub-index 51}
+">3286 :write 0</div></a><a href="#i6653"><div class="op info" id="i6653" style="width:100;left:3074;top:832;height:8944" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.352Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3291,
+ :time 30352639900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6653,
+ :sub-index 53}
+">3291 :cas [2 3]</div></a><a href="#i6656"><div class="op info" id="i6656" style="width:100;left:17490;top:864;height:8912" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.371Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3464,
+ :time 30371241100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6656,
+ :sub-index 56}
+">3464 :write 2</div></a><a href="#i6658"><div class="op info" id="i6658" style="width:100;left:636;top:880;height:8896" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.379Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3228,
+ :time 30379659000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6658,
+ :sub-index 58}
+">3228 :write 0</div></a><a href="#i6660"><div class="op info" id="i6660" style="width:100;left:7844;top:912;height:8864" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.380Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3357,
+ :time 30380822600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6660,
+ :sub-index 60}
+">3357 :write 0</div></a><a href="#i6662"><div class="op info" id="i6662" style="width:100;left:18020;top:944;height:8832" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.394Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3469,
+ :time 30394985100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6662,
+ :sub-index 62}
+">3469 :cas [1 1]</div></a><a href="#i6663"><div class="op info" id="i6663" style="width:100;left:2968;top:976;height:8800" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.396Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3290,
+ :time 30396528700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6663,
+ :sub-index 63}
+">3290 :write 3</div></a><a href="#i6665"><div class="op info" id="i6665" style="width:100;left:3392;top:1024;height:8752" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.408Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3296,
+ :time 30408492900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6665,
+ :sub-index 65}
+">3296 :cas [0 4]</div></a><a href="#i6669"><div class="op info" id="i6669" style="width:100;left:742;top:1088;height:8688" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.428Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3233,
+ :time 30428433100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6669,
+ :sub-index 69}
+">3233 :write 3</div></a><a href="#i6670"><div class="op info" id="i6670" style="width:100;left:3710;top:1056;height:8720" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.431Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 3],
+ :process 3301,
+ :time 30431749100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6670,
+ :sub-index 70}
+">3301 :cas [1 3]</div></a><a href="#i6671"><div class="op info" id="i6671" style="width:100;left:18550;top:1072;height:8704" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.434Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3474,
+ :time 30434508600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6671,
+ :sub-index 71}
+">3474 :write 3</div></a><a href="#i6674"><div class="op info" id="i6674" style="width:100;left:3286;top:1152;height:8624" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.447Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3295,
+ :time 30447310000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6674,
+ :sub-index 74}
+">3295 :read </div></a><a href="#i6675"><div class="op info" id="i6675" style="width:100;left:8268;top:1168;height:8608" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.450Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3362,
+ :time 30450711500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6675,
+ :sub-index 75}
+">3362 :read </div></a><a href="#i6679"><div class="op info" id="i6679" style="width:100;left:4028;top:1216;height:8560" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.482Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3306,
+ :time 30482382100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6679,
+ :sub-index 79}
+">3306 :read </div></a><a href="#i6680"><div class="op info" id="i6680" style="width:100;left:19080;top:1248;height:8528" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.482Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3479,
+ :time 30482498200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6680,
+ :sub-index 80}
+">3479 :write 1</div></a><a href="#i6681"><div class="op info" id="i6681" style="width:100;left:848;top:1232;height:8544" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.482Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3238,
+ :time 30482594300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6681,
+ :sub-index 81}
+">3238 :write 4</div></a><a href="#i6683"><div class="op info" id="i6683" style="width:100;left:3604;top:1312;height:8464" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.500Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3300,
+ :time 30500263400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6683,
+ :sub-index 83}
+">3300 :cas [0 4]</div></a><a href="#i6685"><div class="op info" id="i6685" style="width:100;left:8692;top:1344;height:8432" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.506Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3367,
+ :time 30506167100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6685,
+ :sub-index 85}
+">3367 :cas [0 1]</div></a><a href="#i6688"><div class="op info" id="i6688" style="width:100;left:954;top:1376;height:8400" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.528Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3243,
+ :time 30528438300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6688,
+ :sub-index 88}
+">3243 :cas [0 1]</div></a><a href="#i6689"><div class="op info" id="i6689" style="width:100;left:0;top:1424;height:16" title="Msg: nil
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:25.528Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 30528470400,
+ :index 6689,
+ :sub-index 89}
+">:nemesis :start </div></a><a href="#i6693"><div class="op info" id="i6693" style="width:100;left:3922;top:1392;height:8384" title="Dur: 38 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.556Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3305,
+ :time 30556008300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6693,
+ :sub-index 93}
+">3305 :read </div></a><a href="#i6694"><div class="op info" id="i6694" style="width:100;left:19504;top:1472;height:8304" title="Dur: 25 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.567Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3484,
+ :time 30567919400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6694,
+ :sub-index 94}
+">3484 :read </div></a><a href="#i6695"><div class="op info" id="i6695" style="width:100;left:4346;top:1456;height:8320" title="Dur: 32 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.572Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3311,
+ :time 30572487200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6695,
+ :sub-index 95}
+">3311 :write 1</div></a><a href="#i6696"><div class="op info" id="i6696" style="width:100;left:9116;top:1440;height:8336" title="Dur: 35 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.573Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3372,
+ :time 30573833500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6696,
+ :sub-index 96}
+">3372 :read </div></a><a href="#i6698"><div class="op info" id="i6698" style="width:100;left:1060;top:1552;height:8224" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.599Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3248,
+ :time 30599834600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6698,
+ :sub-index 98}
+">3248 :write 3</div></a><a href="#i6703"><div class="op info" id="i6703" style="width:100;left:4240;top:1584;height:8192" title="Dur: 22 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.633Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 3],
+ :process 3310,
+ :time 30633964900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6703,
+ :sub-index 103}
+">3310 :cas [4 3]</div></a><a href="#i6704"><div class="op info" id="i6704" style="width:100;left:4664;top:1600;height:8176" title="Dur: 29 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.642Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 1],
+ :process 3316,
+ :time 30642255700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6704,
+ :sub-index 104}
+">3316 :cas [2 1]</div></a><a href="#i6705"><div class="op info" id="i6705" style="width:100;left:19928;top:1616;height:8160" title="Dur: 22 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.644Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3489,
+ :time 30644630400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6705,
+ :sub-index 105}
+">3489 :write 0</div></a><a href="#i6706"><div class="op info" id="i6706" style="width:100;left:9540;top:1632;height:8144" title="Dur: 22 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.647Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3377,
+ :time 30647867900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6706,
+ :sub-index 106}
+">3377 :write 3</div></a><a href="#i6708"><div class="op info" id="i6708" style="width:100;left:1166;top:1712;height:8064" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.663Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3253,
+ :time 30663338900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6708,
+ :sub-index 108}
+">3253 :write 1</div></a><a href="#i6711"><div class="op info" id="i6711" style="width:100;left:4558;top:1744;height:8032" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.694Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3315,
+ :time 30694815100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6711,
+ :sub-index 111}
+">3315 :write 1</div></a><a href="#i6713"><div class="op info" id="i6713" style="width:100;left:9964;top:1760;height:8016" title="Dur: 23 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.698Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3382,
+ :time 30698848200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6713,
+ :sub-index 113}
+">3382 :cas [3 1]</div></a><a href="#i6714"><div class="op info" id="i6714" style="width:100;left:4982;top:1792;height:7984" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.702Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3321,
+ :time 30702990200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6714,
+ :sub-index 114}
+">3321 :read </div></a><a href="#i6717"><div class="op info" id="i6717" style="width:100;left:10388;top:1840;height:7936" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.711Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3387,
+ :time 30711747600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6717,
+ :sub-index 117}
+">3387 :cas [1 1]</div></a><a href="#i6718"><div class="op info" id="i6718" style="width:100;left:20352;top:1856;height:7920" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.718Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3494,
+ :time 30718778700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6718,
+ :sub-index 118}
+">3494 :write 2</div></a><a href="#i6723"><div class="op info" id="i6723" style="width:100;left:4876;top:1904;height:7872" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.740Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3320,
+ :time 30740389500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6723,
+ :sub-index 123}
+">3320 :read </div></a><a href="#i6725"><div class="op info" id="i6725" style="width:100;left:1272;top:1936;height:7840" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.743Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3258,
+ :time 30743861100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6725,
+ :sub-index 125}
+">3258 :read </div></a><a href="#i6726"><div class="op info" id="i6726" style="width:100;left:10812;top:1984;height:7792" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.758Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3392,
+ :time 30758178500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6726,
+ :sub-index 126}
+">3392 :read </div></a><a href="#i6728"><div class="op info" id="i6728" style="width:100;left:5300;top:1920;height:7856" title="Dur: 38 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.764Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3326,
+ :time 30764177200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6728,
+ :sub-index 128}
+">3326 :write 3</div></a><a href="#i6729"><div class="op info" id="i6729" style="width:100;left:20776;top:1952;height:7824" title="Dur: 28 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.765Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3499,
+ :time 30765219600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6729,
+ :sub-index 129}
+">3499 :read </div></a><a href="#i6733"><div class="op info" id="i6733" style="width:100;left:1378;top:2032;height:7744" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.777Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 4],
+ :process 3263,
+ :time 30777658700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6733,
+ :sub-index 133}
+">3263 :cas [2 4]</div></a><a href="#i6734"><div class="op info" id="i6734" style="width:100;left:11236;top:2096;height:7680" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.782Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3397,
+ :time 30782689900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6734,
+ :sub-index 134}
+">3397 :read </div></a><a href="#i6735"><div class="op info" id="i6735" style="width:100;left:5618;top:2080;height:7696" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.788Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3331,
+ :time 30788846300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6735,
+ :sub-index 135}
+">3331 :read </div></a><a href="#i6736"><div class="op info" id="i6736" style="width:100;left:21200;top:2112;height:7664" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.789Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3504,
+ :time 30789137100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6736,
+ :sub-index 136}
+">3504 :write 2</div></a><a href="#i6738"><div class="op info" id="i6738" style="width:100;left:5194;top:2192;height:7584" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.808Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 4],
+ :process 3325,
+ :time 30808463000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6738,
+ :sub-index 138}
+">3325 :cas [3 4]</div></a><a href="#i6742"><div class="op info" id="i6742" style="width:100;left:6042;top:2224;height:7552" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.827Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3336,
+ :time 30827002700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6742,
+ :sub-index 142}
+">3336 :read </div></a><a href="#i6745"><div class="op info" id="i6745" style="width:100;left:5512;top:2240;height:7536" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.831Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3330,
+ :time 30831380400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6745,
+ :sub-index 145}
+">3330 :cas [3 1]</div></a><a href="#i6746"><div class="op info" id="i6746" style="width:100;left:21624;top:2256;height:7520" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.833Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 4],
+ :process 3509,
+ :time 30833809400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6746,
+ :sub-index 146}
+">3509 :cas [4 4]</div></a><a href="#i6747"><div class="op info" id="i6747" style="width:100;left:11660;top:2288;height:7488" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.842Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3402,
+ :time 30842941700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6747,
+ :sub-index 147}
+">3402 :read </div></a><a href="#i6748"><div class="op info" id="i6748" style="width:100;left:1590;top:2304;height:7472" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.844Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3268,
+ :time 30844645000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6748,
+ :sub-index 148}
+">3268 :write 0</div></a><a href="#i6751"><div class="op info" id="i6751" style="width:100;left:22048;top:2384;height:7392" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.859Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3514,
+ :time 30859604800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6751,
+ :sub-index 151}
+">3514 :cas [0 0]</div></a><a href="#i6752"><div class="op info" id="i6752" style="width:100;left:6466;top:2400;height:7376" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.863Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 2],
+ :process 3341,
+ :time 30863545600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6752,
+ :sub-index 152}
+">3341 :cas [3 2]</div></a><a href="#i6755"><div class="op info" id="i6755" style="width:100;left:5936;top:2448;height:7328" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.878Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3335,
+ :time 30878556400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6755,
+ :sub-index 155}
+">3335 :read </div></a><a href="#i6758"><div class="op info" id="i6758" style="width:100;left:12084;top:2464;height:7312" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.891Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3407,
+ :time 30891498800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6758,
+ :sub-index 158}
+">3407 :cas [1 0]</div></a><a href="#i6759"><div class="op info" id="i6759" style="width:100;left:22472;top:2496;height:7280" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.893Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3519,
+ :time 30893825300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6759,
+ :sub-index 159}
+">3519 :read </div></a><a href="#i6760"><div class="op info" id="i6760" style="width:100;left:1908;top:2512;height:7264" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.895Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3273,
+ :time 30895445100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6760,
+ :sub-index 160}
+">3273 :write 4</div></a><a href="#i6763"><div class="op info" id="i6763" style="width:100;left:12508;top:2576;height:7200" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.908Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 2],
+ :process 3412,
+ :time 30908494200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6763,
+ :sub-index 163}
+">3412 :cas [3 2]</div></a><a href="#i6764"><div class="op info" id="i6764" style="width:100;left:6360;top:2592;height:7184" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.910Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3340,
+ :time 30910558600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6764,
+ :sub-index 164}
+">3340 :read </div></a><a href="#i6766"><div class="op info" id="i6766" style="width:100;left:6890;top:2640;height:7136" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.919Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3346,
+ :time 30919946600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6766,
+ :sub-index 166}
+">3346 :read </div></a><a href="#i6769"><div class="op info" id="i6769" style="width:100;left:12932;top:2672;height:7104" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.928Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3417,
+ :time 30928169100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6769,
+ :sub-index 169}
+">3417 :read </div></a><a href="#i6770"><div class="op info" id="i6770" style="width:100;left:7314;top:2688;height:7088" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.931Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3351,
+ :time 30931097300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6770,
+ :sub-index 170}
+">3351 :write 1</div></a><a href="#i6772"><div class="op info" id="i6772" style="width:100;left:6784;top:2736;height:7040" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.941Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3345,
+ :time 30941145900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6772,
+ :sub-index 172}
+">3345 :cas [0 0]</div></a><a href="#i6774"><div class="op info" id="i6774" style="width:100;left:22896;top:2768;height:7008" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.954Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3524,
+ :time 30954713600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6774,
+ :sub-index 174}
+">3524 :read </div></a><a href="#i6776"><div class="op info" id="i6776" style="width:100;left:2226;top:2800;height:6976" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.964Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3278,
+ :time 30964176000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6776,
+ :sub-index 176}
+">3278 :write 1</div></a><a href="#i6778"><div class="op info" id="i6778" style="width:100;left:7208;top:2832;height:6944" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.977Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3350,
+ :time 30977441200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6778,
+ :sub-index 178}
+">3350 :read </div></a><a href="#i6781"><div class="op info" id="i6781" style="width:100;left:23320;top:2864;height:6912" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:25.998Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 0],
+ :process 3529,
+ :time 30998994800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6781,
+ :sub-index 181}
+">3529 :cas [3 0]</div></a><a href="#i6783"><div class="op info" id="i6783" style="width:100;left:13356;top:2880;height:6896" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.008Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3422,
+ :time 31008686700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6783,
+ :sub-index 183}
+">3422 :read </div></a><a href="#i6784"><div class="op info" id="i6784" style="width:100;left:7738;top:2912;height:6864" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.009Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3356,
+ :time 31009971400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6784,
+ :sub-index 184}
+">3356 :cas [3 1]</div></a><a href="#i6786"><div class="op info" id="i6786" style="width:100;left:7632;top:2960;height:6816" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.023Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3355,
+ :time 31023913000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6786,
+ :sub-index 186}
+">3355 :cas [1 0]</div></a><a href="#i6789"><div class="op info" id="i6789" style="width:100;left:2544;top:2992;height:6784" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.049Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3283,
+ :time 31049927100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6789,
+ :sub-index 189}
+">3283 :read </div></a><a href="#i6792"><div class="op info" id="i6792" style="width:100;left:8162;top:3008;height:6768" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.063Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 2],
+ :process 3361,
+ :time 31063142500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6792,
+ :sub-index 192}
+">3361 :cas [1 2]</div></a><a href="#i6793"><div class="op info" id="i6793" style="width:100;left:23744;top:3056;height:6720" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.071Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3534,
+ :time 31071451600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6793,
+ :sub-index 193}
+">3534 :read </div></a><a href="#i6796"><div class="op info" id="i6796" style="width:100;left:8056;top:3120;height:6656" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.081Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3360,
+ :time 31081594200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6796,
+ :sub-index 196}
+">3360 :read </div></a><a href="#i6797"><div class="op info" id="i6797" style="width:100;left:2862;top:3104;height:6672" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.082Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3288,
+ :time 31082489200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6797,
+ :sub-index 197}
+">3288 :read </div></a><a href="#i6799"><div class="op info" id="i6799" style="width:100;left:13780;top:3040;height:6736" title="Dur: 32 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.085Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3427,
+ :time 31085416500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6799,
+ :sub-index 199}
+">3427 :read </div></a><a href="#i6801"><div class="op info" id="i6801" style="width:100;left:24168;top:3168;height:6608" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.090Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 0],
+ :process 3539,
+ :time 31090610700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6801,
+ :sub-index 201}
+">3539 :cas [3 0]</div></a><a href="#i6804"><div class="op info" id="i6804" style="width:100;left:8480;top:3248;height:6528" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.098Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3365,
+ :time 31098337000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6804,
+ :sub-index 204}
+">3365 :write 1</div></a><a href="#i6805"><div class="op info" id="i6805" style="width:100;left:8586;top:3232;height:6544" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.107Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3366,
+ :time 31107291700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6805,
+ :sub-index 205}
+">3366 :read </div></a><a href="#i6806"><div class="op info" id="i6806" style="width:100;left:14204;top:3200;height:6576" title="Dur: 20 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.108Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 2],
+ :process 3432,
+ :time 31108778700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6806,
+ :sub-index 206}
+">3432 :cas [4 2]</div></a><a href="#i6809"><div class="op info" id="i6809" style="width:100;left:8904;top:3312;height:6464" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.130Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3370,
+ :time 31130275400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6809,
+ :sub-index 209}
+">3370 :write 0</div></a><a href="#i6810"><div class="op info" id="i6810" style="width:100;left:3180;top:3328;height:6448" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.131Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3293,
+ :time 31131711200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6810,
+ :sub-index 210}
+">3293 :cas [1 0]</div></a><a href="#i6813"><div class="op info" id="i6813" style="width:100;left:24592;top:3376;height:6400" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.140Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 3],
+ :process 3544,
+ :time 31140606300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6813,
+ :sub-index 213}
+">3544 :cas [0 3]</div></a><a href="#i6814"><div class="op info" id="i6814" style="width:100;left:3498;top:3392;height:6384" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.145Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3298,
+ :time 31145481800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6814,
+ :sub-index 214}
+">3298 :read </div></a><a href="#i6816"><div class="op info" id="i6816" style="width:100;left:9010;top:3440;height:6336" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.151Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3371,
+ :time 31151372900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6816,
+ :sub-index 216}
+">3371 :write 1</div></a><a href="#i6818"><div class="op info" id="i6818" style="width:100;left:14628;top:3472;height:6304" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.169Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3437,
+ :time 31169365000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6818,
+ :sub-index 218}
+">3437 :write 2</div></a><a href="#i6821"><div class="op info" id="i6821" style="width:100;left:25016;top:3504;height:6272" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.181Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3549,
+ :time 31181499200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6821,
+ :sub-index 221}
+">3549 :cas [1 1]</div></a><a href="#i6822"><div class="op info" id="i6822" style="width:100;left:9328;top:3520;height:6256" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.181Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3375,
+ :time 31181739400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6822,
+ :sub-index 222}
+">3375 :read </div></a><a href="#i6824"><div class="op info" id="i6824" style="width:100;left:9752;top:3568;height:6208" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.193Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 0],
+ :process 3380,
+ :time 31193060900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6824,
+ :sub-index 224}
+">3380 :cas [4 0]</div></a><a href="#i6829"><div class="op info" id="i6829" style="width:100;left:25440;top:3616;height:6160" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.212Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3554,
+ :time 31212203800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6829,
+ :sub-index 229}
+">3554 :write 1</div></a><a href="#i6830"><div class="op info" id="i6830" style="width:100;left:3816;top:3600;height:6176" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.213Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 2],
+ :process 3303,
+ :time 31213750100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6830,
+ :sub-index 230}
+">3303 :cas [2 2]</div></a><a href="#i6831"><div class="op info" id="i6831" style="width:100;left:15158;top:3648;height:6128" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.215Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 3],
+ :process 3442,
+ :time 31215308900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6831,
+ :sub-index 231}
+">3442 :cas [0 3]</div></a><a href="#i6832"><div class="op info" id="i6832" style="width:100;left:9434;top:3632;height:6144" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.218Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3376,
+ :time 31218193400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6832,
+ :sub-index 232}
+">3376 :write 3</div></a><a href="#i6834"><div class="op info" id="i6834" style="width:100;left:25864;top:3728;height:6048" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.228Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3559,
+ :time 31228280000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6834,
+ :sub-index 234}
+">3559 :read </div></a><a href="#i6836"><div class="op info" id="i6836" style="width:100;left:4134;top:3760;height:6016" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.246Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3308,
+ :time 31246992300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6836,
+ :sub-index 236}
+">3308 :read </div></a><a href="#i6838"><div class="op info" id="i6838" style="width:100;left:26182;top:3792;height:5984" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.251Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3564,
+ :time 31251538400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6838,
+ :sub-index 238}
+">3564 :write 2</div></a><a href="#i6841"><div class="op info" id="i6841" style="width:100;left:10176;top:3824;height:5952" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.259Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3385,
+ :time 31259077600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6841,
+ :sub-index 241}
+">3385 :read </div></a><a href="#i6844"><div class="op info" id="i6844" style="width:100;left:15688;top:3872;height:5904" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.268Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 3],
+ :process 3447,
+ :time 31268898700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6844,
+ :sub-index 244}
+">3447 :cas [1 3]</div></a><a href="#i6845"><div class="op info" id="i6845" style="width:100;left:9858;top:3888;height:5888" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.269Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3381,
+ :time 31269631500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6845,
+ :sub-index 245}
+">3381 :read </div></a><a href="#i6846"><div class="op info" id="i6846" style="width:100;left:26500;top:3840;height:5936" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.270Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3569,
+ :time 31270452400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6846,
+ :sub-index 246}
+">3569 :write 1</div></a><a href="#i6849"><div class="op info" id="i6849" style="width:100;left:10600;top:3968;height:5808" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.279Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 4],
+ :process 3390,
+ :time 31279488600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6849,
+ :sub-index 249}
+">3390 :cas [4 4]</div></a><a href="#i6850"><div class="op info" id="i6850" style="width:100;left:4452;top:3952;height:5824" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.280Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3313,
+ :time 31280914700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6850,
+ :sub-index 250}
+">3313 :read </div></a><a href="#i6852"><div class="op info" id="i6852" style="width:100;left:10282;top:4016;height:5760" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.290Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3386,
+ :time 31290646200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6852,
+ :sub-index 252}
+">3386 :read </div></a><a href="#i6855"><div class="op info" id="i6855" style="width:100;left:10706;top:4048;height:5728" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.310Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 2],
+ :process 3391,
+ :time 31310272200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6855,
+ :sub-index 255}
+">3391 :cas [0 2]</div></a><a href="#i6856"><div class="op info" id="i6856" style="width:100;left:4770;top:4064;height:5712" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.315Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3318,
+ :time 31315192200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6856,
+ :sub-index 256}
+">3318 :cas [0 0]</div></a><a href="#i6859"><div class="op info" id="i6859" style="width:100;left:16218;top:4128;height:5648" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.326Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3452,
+ :time 31326204700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6859,
+ :sub-index 259}
+">3452 :read </div></a><a href="#i6860"><div class="op info" id="i6860" style="width:100;left:11024;top:4112;height:5664" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.327Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3395,
+ :time 31327809900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6860,
+ :sub-index 260}
+">3395 :write 1</div></a><a href="#i6863"><div class="op info" id="i6863" style="width:100;left:26712;top:4176;height:5600" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.334Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3574,
+ :time 31334232900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6863,
+ :sub-index 263}
+">3574 :write 2</div></a><a href="#i6864"><div class="op info" id="i6864" style="width:100;left:5088;top:4192;height:5584" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.338Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 0],
+ :process 3323,
+ :time 31338063700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6864,
+ :sub-index 264}
+">3323 :cas [3 0]</div></a><a href="#i6867"><div class="op info" id="i6867" style="width:100;left:26924;top:4240;height:5536" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.372Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 4],
+ :process 3579,
+ :time 31372860200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6867,
+ :sub-index 267}
+">3579 :cas [4 4]</div></a><a href="#i6870"><div class="op info" id="i6870" style="width:100;left:11448;top:4304;height:5472" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.379Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3400,
+ :time 31379323200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6870,
+ :sub-index 270}
+">3400 :write 1</div></a><a href="#i6871"><div class="op info" id="i6871" style="width:100;left:11130;top:4288;height:5488" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.380Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3396,
+ :time 31380595400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6871,
+ :sub-index 271}
+">3396 :write 3</div></a><a href="#i6873"><div class="op info" id="i6873" style="width:100;left:5406;top:4256;height:5520" title="Dur: 20 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.386Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3328,
+ :time 31386131600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6873,
+ :sub-index 273}
+">3328 :read </div></a><a href="#i6874"><div class="op info" id="i6874" style="width:100;left:16748;top:4352;height:5424" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.390Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3457,
+ :time 31390151100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6874,
+ :sub-index 274}
+">3457 :read </div></a><a href="#i6876"><div class="op info" id="i6876" style="width:100;left:27136;top:4400;height:5376" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.404Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3584,
+ :time 31404805600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6876,
+ :sub-index 276}
+">3584 :cas [1 1]</div></a><a href="#i6879"><div class="op info" id="i6879" style="width:100;left:27348;top:4432;height:5344" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.422Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3589,
+ :time 31422398200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6879,
+ :sub-index 279}
+">3589 :write 0</div></a><a href="#i6880"><div class="op info" id="i6880" style="width:100;left:5830;top:4448;height:5328" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.427Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 0],
+ :process 3333,
+ :time 31427189000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6880,
+ :sub-index 280}
+">3333 :cas [2 0]</div></a><a href="#i6882"><div class="op info" id="i6882" style="width:100;left:11554;top:4496;height:5280" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.438Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3401,
+ :time 31438781400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6882,
+ :sub-index 282}
+">3401 :read </div></a><a href="#i6884"><div class="op info" id="i6884" style="width:100;left:11872;top:4528;height:5248" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.447Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3405,
+ :time 31447913100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6884,
+ :sub-index 284}
+">3405 :write 1</div></a><a href="#i6886"><div class="op info" id="i6886" style="width:100;left:17278;top:4560;height:5216" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.455Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3462,
+ :time 31455050300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6886,
+ :sub-index 286}
+">3462 :read </div></a><a href="#i6890"><div class="op info" id="i6890" style="width:100;left:6254;top:4592;height:5184" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.479Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 2],
+ :process 3338,
+ :time 31479566500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6890,
+ :sub-index 290}
+">3338 :cas [0 2]</div></a><a href="#i6891"><div class="op info" id="i6891" style="width:100;left:11978;top:4608;height:5168" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.480Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3406,
+ :time 31480018000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6891,
+ :sub-index 291}
+">3406 :read </div></a><a href="#i6892"><div class="op info" id="i6892" style="width:100;left:17808;top:4624;height:5152" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.481Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3467,
+ :time 31481068400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6892,
+ :sub-index 292}
+">3467 :read </div></a><a href="#i6895"><div class="op info" id="i6895" style="width:100;left:6678;top:4688;height:5088" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.493Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 2],
+ :process 3343,
+ :time 31493350700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6895,
+ :sub-index 295}
+">3343 :cas [0 2]</div></a><a href="#i6896"><div class="op info" id="i6896" style="width:100;left:27560;top:4704;height:5072" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.494Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3594,
+ :time 31494663200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6896,
+ :sub-index 296}
+">3594 :read </div></a><a href="#i6898"><div class="op info" id="i6898" style="width:100;left:12402;top:4752;height:5024" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.499Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3411,
+ :time 31499842700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6898,
+ :sub-index 298}
+">3411 :write 1</div></a><a href="#i6900"><div class="op info" id="i6900" style="width:100;left:12826;top:4784;height:4992" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.510Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3416,
+ :time 31510203900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6900,
+ :sub-index 300}
+">3416 :cas [0 4]</div></a><a href="#i6903"><div class="op info" id="i6903" style="width:100;left:18338;top:4816;height:4960" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.519Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3472,
+ :time 31519786900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6903,
+ :sub-index 303}
+">3472 :cas [0 0]</div></a><a href="#i6904"><div class="op info" id="i6904" style="width:100;left:12296;top:4832;height:4944" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.529Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3410,
+ :time 31529018600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6904,
+ :sub-index 304}
+">3410 :read </div></a><a href="#i6906"><div class="op info" id="i6906" style="width:100;left:27772;top:4880;height:4896" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.550Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3599,
+ :time 31550845300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6906,
+ :sub-index 306}
+">3599 :read </div></a><a href="#i6911"><div class="op info" id="i6911" style="width:100;left:18868;top:4912;height:4864" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.567Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3477,
+ :time 31567734400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6911,
+ :sub-index 311}
+">3477 :read </div></a><a href="#i6912"><div class="op info" id="i6912" style="width:100;left:7102;top:4944;height:4832" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.571Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3348,
+ :time 31571127900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6912,
+ :sub-index 312}
+">3348 :write 4</div></a><a href="#i6914"><div class="op info" id="i6914" style="width:100;left:13250;top:4928;height:4848" title="Dur: 26 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.585Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3421,
+ :time 31585081700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6914,
+ :sub-index 314}
+">3421 :read </div></a><a href="#i6915"><div class="op info" id="i6915" style="width:100;left:27984;top:5008;height:4768" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.589Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3604,
+ :time 31589459500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6915,
+ :sub-index 315}
+">3604 :cas [2 3]</div></a><a href="#i6916"><div class="op info" id="i6916" style="width:100;left:12720;top:4960;height:4816" title="Dur: 29 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.595Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3415,
+ :time 31595433900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6916,
+ :sub-index 316}
+">3415 :write 1</div></a><a href="#i6918"><div class="op info" id="i6918" style="width:100;left:19398;top:5072;height:4704" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.634Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3482,
+ :time 31634186900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6918,
+ :sub-index 318}
+">3482 :read </div></a><a href="#i6922"><div class="op info" id="i6922" style="width:100;left:7526;top:5104;height:4672" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.647Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3353,
+ :time 31647297900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6922,
+ :sub-index 322}
+">3353 :read </div></a><a href="#i6924"><div class="op info" id="i6924" style="width:100;left:19822;top:5136;height:4640" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.651Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3487,
+ :time 31651118700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6924,
+ :sub-index 324}
+">3487 :read </div></a><a href="#i6926"><div class="op info" id="i6926" style="width:100;left:13144;top:5120;height:4656" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.654Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3420,
+ :time 31654968200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6926,
+ :sub-index 326}
+">3420 :write 4</div></a><a href="#i6927"><div class="op info" id="i6927" style="width:100;left:28196;top:5168;height:4608" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.660Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 2],
+ :process 3609,
+ :time 31660974300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6927,
+ :sub-index 327}
+">3609 :cas [1 2]</div></a><a href="#i6928"><div class="op info" id="i6928" style="width:100;left:13674;top:5200;height:4576" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.662Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3426,
+ :time 31662944500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6928,
+ :sub-index 328}
+">3426 :read </div></a><a href="#i6930"><div class="op info" id="i6930" style="width:100;left:14098;top:5264;height:4512" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.671Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3431,
+ :time 31671639800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6930,
+ :sub-index 330}
+">3431 :write 3</div></a><a href="#i6932"><div class="op info" id="i6932" style="width:100;left:7950;top:5296;height:4480" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.686Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3358,
+ :time 31686205400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6932,
+ :sub-index 332}
+">3358 :read </div></a><a href="#i6935"><div class="op info" id="i6935" style="width:100;left:20246;top:5328;height:4448" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.699Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3492,
+ :time 31699191400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6935,
+ :sub-index 335}
+">3492 :cas [2 3]</div></a><a href="#i6937"><div class="op info" id="i6937" style="width:100;left:13568;top:5376;height:4400" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.714Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3425,
+ :time 31714993500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6937,
+ :sub-index 337}
+">3425 :read </div></a><a href="#i6938"><div class="op info" id="i6938" style="width:100;left:14522;top:5344;height:4432" title="Dur: 28 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.719Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 4],
+ :process 3436,
+ :time 31719770800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6938,
+ :sub-index 338}
+">3436 :cas [3 4]</div></a><a href="#i6940"><div class="op info" id="i6940" style="width:100;left:28408;top:5424;height:4352" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.729Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3614,
+ :time 31729508500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6940,
+ :sub-index 340}
+">3614 :read </div></a><a href="#i6942"><div class="op info" id="i6942" style="width:100;left:8374;top:5456;height:4320" title="Dur: 24 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.762Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3363,
+ :time 31762978300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6942,
+ :sub-index 342}
+">3363 :write 0</div></a><a href="#i6947"><div class="op info" id="i6947" style="width:100;left:20670;top:5488;height:4288" title="Dur: 25 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.793Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3497,
+ :time 31793377200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6947,
+ :sub-index 347}
+">3497 :cas [0 0]</div></a><a href="#i6948"><div class="op info" id="i6948" style="width:100;left:15052;top:5520;height:4256" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.795Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3441,
+ :time 31795590900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6948,
+ :sub-index 348}
+">3441 :read </div></a><a href="#i6949"><div class="op info" id="i6949" style="width:100;left:13992;top:5504;height:4272" title="Dur: 29 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.808Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3430,
+ :time 31808908100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6949,
+ :sub-index 349}
+">3430 :write 0</div></a><a href="#i6952"><div class="op info" id="i6952" style="width:100;left:28620;top:5536;height:4240" title="Dur: 50 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.836Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3619,
+ :time 31836049000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6952,
+ :sub-index 352}
+">3619 :write 0</div></a><a href="#i6953"><div class="op info" id="i6953" style="width:100;left:8798;top:5600;height:4176" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.836Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3368,
+ :time 31836960300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6953,
+ :sub-index 353}
+">3368 :write 1</div></a><a href="#i6955"><div class="op info" id="i6955" style="width:100;left:21094;top:5616;height:4160" title="Dur: 31 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.850Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3502,
+ :time 31850658100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6955,
+ :sub-index 355}
+">3502 :write 4</div></a><a href="#i6956"><div class="op info" id="i6956" style="width:100;left:14416;top:5664;height:4112" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.855Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3435,
+ :time 31855069200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6956,
+ :sub-index 356}
+">3435 :write 3</div></a><a href="#i6959"><div class="op info" id="i6959" style="width:100;left:28832;top:5712;height:4064" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.862Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3624,
+ :time 31862662200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6959,
+ :sub-index 359}
+">3624 :read </div></a><a href="#i6960"><div class="op info" id="i6960" style="width:100;left:14946;top:5728;height:4048" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.869Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 4],
+ :process 3440,
+ :time 31869627300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6960,
+ :sub-index 360}
+">3440 :cas [2 4]</div></a><a href="#i6964"><div class="op info" id="i6964" style="width:100;left:9222;top:5808;height:3968" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.879Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3373,
+ :time 31879437000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6964,
+ :sub-index 364}
+">3373 :cas [1 1]</div></a><a href="#i6966"><div class="op info" id="i6966" style="width:100;left:21518;top:5776;height:4000" title="Dur: 20 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.893Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3507,
+ :time 31893524400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6966,
+ :sub-index 366}
+">3507 :read </div></a><a href="#i6967"><div class="op info" id="i6967" style="width:100;left:15476;top:5840;height:3936" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.895Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3445,
+ :time 31895520700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6967,
+ :sub-index 367}
+">3445 :read </div></a><a href="#i6968"><div class="op info" id="i6968" style="width:100;left:15582;top:5792;height:3984" title="Dur: 22 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.895Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 1],
+ :process 3446,
+ :time 31895652100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6968,
+ :sub-index 368}
+">3446 :cas [4 1]</div></a><a href="#i6970"><div class="op info" id="i6970" style="width:100;left:21942;top:5904;height:3872" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.911Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3512,
+ :time 31911695700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6970,
+ :sub-index 370}
+">3512 :write 0</div></a><a href="#i6972"><div class="op info" id="i6972" style="width:100;left:29044;top:5936;height:3840" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.927Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3629,
+ :time 31927196200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6972,
+ :sub-index 372}
+">3629 :cas [2 3]</div></a><a href="#i6975"><div class="op info" id="i6975" style="width:100;left:16006;top:5968;height:3808" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.941Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 2],
+ :process 3450,
+ :time 31941000200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6975,
+ :sub-index 375}
+">3450 :cas [3 2]</div></a><a href="#i6976"><div class="op info" id="i6976" style="width:100;left:9646;top:5984;height:3792" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.942Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 2],
+ :process 3378,
+ :time 31942476100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6976,
+ :sub-index 376}
+">3378 :cas [2 2]</div></a><a href="#i6978"><div class="op info" id="i6978" style="width:100;left:16112;top:6032;height:3744" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.967Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3451,
+ :time 31967831300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6978,
+ :sub-index 378}
+">3451 :read </div></a><a href="#i6980"><div class="op info" id="i6980" style="width:100;left:22366;top:6064;height:3712" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.978Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 0],
+ :process 3517,
+ :time 31978379100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6980,
+ :sub-index 380}
+">3517 :cas [2 0]</div></a><a href="#i6982"><div class="op info" id="i6982" style="width:100;left:29256;top:6096;height:3680" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.989Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3634,
+ :time 31989074100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6982,
+ :sub-index 382}
+">3634 :read </div></a><a href="#i6984"><div class="op info" id="i6984" style="width:100;left:10070;top:6128;height:3648" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:26.994Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3383,
+ :time 31994738300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6984,
+ :sub-index 384}
+">3383 :read </div></a><a href="#i6988"><div class="op info" id="i6988" style="width:100;left:16642;top:6160;height:3616" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.003Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 2],
+ :process 3456,
+ :time 32003887400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6988,
+ :sub-index 388}
+">3456 :cas [4 2]</div></a><a href="#i6989"><div class="op info" id="i6989" style="width:100;left:22790;top:6176;height:3600" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.011Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 2],
+ :process 3522,
+ :time 32011254100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6989,
+ :sub-index 389}
+">3522 :cas [3 2]</div></a><a href="#i6990"><div class="op info" id="i6990" style="width:100;left:16536;top:6192;height:3584" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.012Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3455,
+ :time 32012028300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6990,
+ :sub-index 390}
+">3455 :write 4</div></a><a href="#i6994"><div class="op info" id="i6994" style="width:100;left:23214;top:6256;height:3520" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.032Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 2],
+ :process 3527,
+ :time 32032525500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6994,
+ :sub-index 394}
+">3527 :cas [3 2]</div></a><a href="#i6995"><div class="op info" id="i6995" style="width:100;left:29362;top:6272;height:3504" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.035Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3639,
+ :time 32035831500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6995,
+ :sub-index 395}
+">3639 :write 1</div></a><a href="#i6996"><div class="op info" id="i6996" style="width:100;left:17172;top:6288;height:3488" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.041Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3461,
+ :time 32041594600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6996,
+ :sub-index 396}
+">3461 :write 4</div></a><a href="#i6998"><div class="op info" id="i6998" style="width:100;left:29468;top:6352;height:3424" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.049Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3644,
+ :time 32049703600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 6998,
+ :sub-index 398}
+">3644 :cas [1 0]</div></a><a href="#i7000"><div class="op info" id="i7000" style="width:100;left:10494;top:6384;height:3392" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.066Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3388,
+ :time 32066043400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7000,
+ :sub-index 400}
+">3388 :read </div></a><a href="#i7004"><div class="op info" id="i7004" style="width:100;left:23638;top:6448;height:3328" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.075Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3532,
+ :time 32075849800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7004,
+ :sub-index 404}
+">3532 :write 2</div></a><a href="#i7005"><div class="op info" id="i7005" style="width:100;left:17066;top:6432;height:3344" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.075Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3460,
+ :time 32075964100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7005,
+ :sub-index 405}
+">3460 :write 4</div></a><a href="#i7008"><div class="op info" id="i7008" style="width:100;left:29574;top:6416;height:3360" title="Dur: 29 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.098Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3649,
+ :time 32098096900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7008,
+ :sub-index 408}
+">3649 :cas [2 3]</div></a><a href="#i7009"><div class="op info" id="i7009" style="width:100;left:24062;top:6496;height:3280" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.098Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3537,
+ :time 32098238100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7009,
+ :sub-index 409}
+">3537 :write 0</div></a><a href="#i7010"><div class="op info" id="i7010" style="width:100;left:17702;top:6512;height:3264" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.108Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3466,
+ :time 32108352300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7010,
+ :sub-index 410}
+">3466 :read </div></a><a href="#i7013"><div class="op info" id="i7013" style="width:100;left:17596;top:6576;height:3200" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.123Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3465,
+ :time 32123859300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7013,
+ :sub-index 413}
+">3465 :cas [0 4]</div></a><a href="#i7014"><div class="op info" id="i7014" style="width:100;left:18232;top:6592;height:3184" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.128Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3471,
+ :time 32128662000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7014,
+ :sub-index 414}
+">3471 :write 1</div></a><a href="#i7016"><div class="op info" id="i7016" style="width:100;left:10918;top:6640;height:3136" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.140Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3393,
+ :time 32140820300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7016,
+ :sub-index 416}
+">3393 :write 0</div></a><a href="#i7019"><div class="op info" id="i7019" style="width:100;left:24486;top:6672;height:3104" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.153Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3542,
+ :time 32153628700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7019,
+ :sub-index 419}
+">3542 :read </div></a><a href="#i7020"><div class="op info" id="i7020" style="width:100;left:29680;top:6688;height:3088" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.153Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3654,
+ :time 32153955600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7020,
+ :sub-index 420}
+">3654 :write 4</div></a><a href="#i7025"><div class="op info" id="i7025" style="width:100;left:29786;top:6736;height:3040" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.174Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 1],
+ :process 3659,
+ :time 32174731000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7025,
+ :sub-index 425}
+">3659 :cas [1 1]</div></a><a href="#i7026"><div class="op info" id="i7026" style="width:100;left:18126;top:6784;height:2992" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.175Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3470,
+ :time 32175015100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7026,
+ :sub-index 426}
+">3470 :cas [0 4]</div></a><a href="#i7027"><div class="op info" id="i7027" style="width:100;left:11342;top:6752;height:3024" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.178Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3398,
+ :time 32178604600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7027,
+ :sub-index 427}
+">3398 :cas [1 0]</div></a><a href="#i7028"><div class="op info" id="i7028" style="width:100;left:18762;top:6768;height:3008" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.180Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3476,
+ :time 32180173400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7028,
+ :sub-index 428}
+">3476 :write 4</div></a><a href="#i7030"><div class="op info" id="i7030" style="width:100;left:24910;top:6864;height:2912" title="Dur: 18 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.187Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3547,
+ :time 32187632700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7030,
+ :sub-index 430}
+">3547 :read </div></a><a href="#i7032"><div class="op info" id="i7032" style="width:100;left:19292;top:6896;height:2880" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.198Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 0],
+ :process 3481,
+ :time 32198160500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7032,
+ :sub-index 432}
+">3481 :cas [0 0]</div></a><a href="#i7035"><div class="op info" id="i7035" style="width:100;left:11766;top:6944;height:2832" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.218Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3403,
+ :time 32218654900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7035,
+ :sub-index 435}
+">3403 :write 3</div></a><a href="#i7036"><div class="op info" id="i7036" style="width:100;left:18656;top:6928;height:2848" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.219Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 3],
+ :process 3475,
+ :time 32219454500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7036,
+ :sub-index 436}
+">3475 :cas [0 3]</div></a><a href="#i7039"><div class="op info" id="i7039" style="width:100;left:29892;top:6992;height:2784" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.246Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3664,
+ :time 32246562100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7039,
+ :sub-index 439}
+">3664 :read </div></a><a href="#i7042"><div class="op info" id="i7042" style="width:100;left:25334;top:7008;height:2768" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.254Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 3],
+ :process 3552,
+ :time 32254392200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7042,
+ :sub-index 442}
+">3552 :cas [3 3]</div></a><a href="#i7043"><div class="op info" id="i7043" style="width:100;left:19716;top:7040;height:2736" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.260Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 3],
+ :process 3486,
+ :time 32260469100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7043,
+ :sub-index 443}
+">3486 :cas [3 3]</div></a><a href="#i7045"><div class="op info" id="i7045" style="width:100;left:12190;top:7056;height:2720" title="Dur: 17 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.264Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3408,
+ :time 32264763900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7045,
+ :sub-index 445}
+">3408 :write 3</div></a><a href="#i7046"><div class="op info" id="i7046" style="width:100;left:19186;top:7104;height:2672" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.270Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 3],
+ :process 3480,
+ :time 32270313100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7046,
+ :sub-index 446}
+">3480 :cas [4 3]</div></a><a href="#i7048"><div class="op info" id="i7048" style="width:100;left:25758;top:7152;height:2624" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.280Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3557,
+ :time 32280075800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7048,
+ :sub-index 448}
+">3557 :read </div></a><a href="#i7052"><div class="op info" id="i7052" style="width:100;left:29998;top:7200;height:2576" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.293Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 4],
+ :process 3669,
+ :time 32293946500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7052,
+ :sub-index 452}
+">3669 :cas [4 4]</div></a><a href="#i7053"><div class="op info" id="i7053" style="width:100;left:20140;top:7184;height:2592" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.294Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3491,
+ :time 32294613300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7053,
+ :sub-index 453}
+">3491 :read </div></a><a href="#i7055"><div class="op info" id="i7055" style="width:100;left:12614;top:7216;height:2560" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.297Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3413,
+ :time 32297886200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7055,
+ :sub-index 455}
+">3413 :write 1</div></a><a href="#i7057"><div class="op info" id="i7057" style="width:100;left:20564;top:7264;height:2512" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.309Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3496,
+ :time 32309961700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7057,
+ :sub-index 457}
+">3496 :cas [0 1]</div></a><a href="#i7058"><div class="op info" id="i7058" style="width:100;left:26076;top:7296;height:2480" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.311Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 2],
+ :process 3562,
+ :time 32311178700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7058,
+ :sub-index 458}
+">3562 :cas [1 2]</div></a><a href="#i7060"><div class="op info" id="i7060" style="width:100;left:26394;top:7344;height:2432" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.322Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3567,
+ :time 32322222400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7060,
+ :sub-index 460}
+">3567 :write 4</div></a><a href="#i7063"><div class="op info" id="i7063" style="width:100;left:30104;top:7376;height:2400" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.340Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3674,
+ :time 32340375500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7063,
+ :sub-index 463}
+">3674 :read </div></a><a href="#i7064"><div class="op info" id="i7064" style="width:100;left:19610;top:7392;height:2384" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.344Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3485,
+ :time 32344591700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7064,
+ :sub-index 464}
+">3485 :write 3</div></a><a href="#i7066"><div class="op info" id="i7066" style="width:100;left:13038;top:7440;height:2336" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.356Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3418,
+ :time 32356827500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7066,
+ :sub-index 466}
+">3418 :read </div></a><a href="#i7068"><div class="op info" id="i7068" style="width:100;left:20988;top:7472;height:2304" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.363Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3501,
+ :time 32363035200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7068,
+ :sub-index 468}
+">3501 :write 0</div></a><a href="#i7070"><div class="op info" id="i7070" style="width:100;left:20034;top:7504;height:2272" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.373Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3490,
+ :time 32373519300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7070,
+ :sub-index 470}
+">3490 :write 0</div></a><a href="#i7072"><div class="op info" id="i7072" style="width:100;left:26606;top:7536;height:2240" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.387Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3572,
+ :time 32387792200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7072,
+ :sub-index 472}
+">3572 :read </div></a><a href="#i7074"><div class="op info" id="i7074" style="width:100;left:26818;top:7568;height:2208" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.396Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 3],
+ :process 3577,
+ :time 32396635900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7074,
+ :sub-index 474}
+">3577 :cas [2 3]</div></a><a href="#i7076"><div class="op info" id="i7076" style="width:100;left:30210;top:7600;height:2176" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.408Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3679,
+ :time 32408138900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7076,
+ :sub-index 476}
+">3679 :write 4</div></a><a href="#i7079"><div class="op info" id="i7079" style="width:100;left:13462;top:7632;height:2144" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.423Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3423,
+ :time 32423885800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7079,
+ :sub-index 479}
+">3423 :read </div></a><a href="#i7082"><div class="op info" id="i7082" style="width:100;left:21412;top:7680;height:2096" title="Dur: 15 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.440Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 2],
+ :process 3506,
+ :time 32440479400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7082,
+ :sub-index 482}
+">3506 :cas [4 2]</div></a><a href="#i7083"><div class="op info" id="i7083" style="width:100;left:20458;top:7648;height:2128" title="Dur: 24 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.442Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3495,
+ :time 32442856100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7083,
+ :sub-index 483}
+">3495 :write 2</div></a><a href="#i7084"><div class="op info" id="i7084" style="width:100;left:30316;top:7696;height:2080" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.445Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3684,
+ :time 32445548100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7084,
+ :sub-index 484}
+">3684 :read </div></a><a href="#i7087"><div class="op info" id="i7087" style="width:100;left:20882;top:7760;height:2016" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.456Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3500,
+ :time 32456289100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7087,
+ :sub-index 487}
+">3500 :write 2</div></a><a href="#i7089"><div class="op info" id="i7089" style="width:100;left:27030;top:7776;height:2000" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.472Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 4],
+ :process 3582,
+ :time 32472227400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7089,
+ :sub-index 489}
+">3582 :cas [1 4]</div></a><a href="#i7090"><div class="op info" id="i7090" style="width:100;left:13886;top:7808;height:1968" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.472Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3428,
+ :time 32472284800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7090,
+ :sub-index 490}
+">3428 :read </div></a><a href="#i7094"><div class="op info" id="i7094" style="width:100;left:21836;top:7856;height:1920" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.488Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3511,
+ :time 32488746700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7094,
+ :sub-index 494}
+">3511 :read </div></a><a href="#i7095"><div class="op info" id="i7095" style="width:100;left:30422;top:7872;height:1904" title="Dur: 11 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.490Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3689,
+ :time 32490560700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7095,
+ :sub-index 495}
+">3689 :read </div></a><a href="#i7097"><div class="op info" id="i7097" style="width:100;left:14310;top:7888;height:1888" title="Dur: 14 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.494Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3433,
+ :time 32494255500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7097,
+ :sub-index 497}
+">3433 :write 2</div></a><a href="#i7099"><div class="op info" id="i7099" style="width:100;left:27242;top:7936;height:1840" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.501Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3587,
+ :time 32501856100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7099,
+ :sub-index 499}
+">3587 :write 0</div></a><a href="#i7101"><div class="op info" id="i7101" style="width:100;left:21306;top:7968;height:1808" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.508Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 3],
+ :process 3505,
+ :time 32508371900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7101,
+ :sub-index 501}
+">3505 :cas [3 3]</div></a><a href="#i7104"><div class="op info" id="i7104" style="width:100;left:30528;top:8000;height:1776" title="Dur: 10 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.514Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3694,
+ :time 32514892600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7104,
+ :sub-index 504}
+">3694 :read </div></a><a href="#i7106"><div class="op info" id="i7106" style="width:100;left:22260;top:8032;height:1744" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.529Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3516,
+ :time 32529142700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7106,
+ :sub-index 506}
+">3516 :write 2</div></a><a href="#i7107"><div class="op info" id="i7107" style="width:100;left:14734;top:8048;height:1728" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.532Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3438,
+ :time 32532975000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7107,
+ :sub-index 507}
+">3438 :read </div></a><a href="#i7108"><div class="op info" id="i7108" style="width:100;left:21730;top:8080;height:1696" title="Dur: 12 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.536Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3510,
+ :time 32536406800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7108,
+ :sub-index 508}
+">3510 :read </div></a><a href="#i7111"><div class="op info" id="i7111" style="width:100;left:27454;top:8144;height:1632" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.549Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 4],
+ :process 3592,
+ :time 32549007900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7111,
+ :sub-index 511}
+">3592 :cas [1 4]</div></a><a href="#i7113"><div class="op info" id="i7113" style="width:100;left:30634;top:8160;height:1616" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.552Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 3],
+ :process 3699,
+ :time 32552793600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7113,
+ :sub-index 513}
+">3699 :cas [4 3]</div></a><a href="#i7114"><div class="op info" id="i7114" style="width:100;left:22154;top:8192;height:1584" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.555Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 0],
+ :process 3515,
+ :time 32555813400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7114,
+ :sub-index 514}
+">3515 :cas [1 0]</div></a><a href="#i7117"><div class="op info" id="i7117" style="width:100;left:30740;top:8240;height:1536" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.561Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3704,
+ :time 32561321400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7117,
+ :sub-index 517}
+">3704 :read </div></a><a href="#i7118"><div class="op info" id="i7118" style="width:100;left:22684;top:8256;height:1520" title="Dur: 3 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.562Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 0],
+ :process 3521,
+ :time 32562059300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7118,
+ :sub-index 518}
+">3521 :cas [4 0]</div></a><a href="#i7120"><div class="op info" id="i7120" style="width:100;left:15264;top:8304;height:1472" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.582Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3443,
+ :time 32582503000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7120,
+ :sub-index 520}
+">3443 :read </div></a><a href="#i7122"><div class="op info" id="i7122" style="width:100;left:22578;top:8336;height:1440" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.593Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 4],
+ :process 3520,
+ :time 32593925500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7122,
+ :sub-index 522}
+">3520 :cas [3 4]</div></a><a href="#i7125"><div class="op info" id="i7125" style="width:100;left:27666;top:8384;height:1392" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.599Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3597,
+ :time 32599207700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7125,
+ :sub-index 525}
+">3597 :write 1</div></a><a href="#i7127"><div class="op info" id="i7127" style="width:100;left:23108;top:8368;height:1408" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.603Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3526,
+ :time 32603980200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7127,
+ :sub-index 527}
+">3526 :write 3</div></a><a href="#i7128"><div class="op info" id="i7128" style="width:100;left:15794;top:8416;height:1360" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.608Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 2],
+ :process 3448,
+ :time 32608394600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7128,
+ :sub-index 528}
+">3448 :cas [2 2]</div></a><a href="#i7130"><div class="op info" id="i7130" style="width:100;left:23532;top:8464;height:1312" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.612Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3531,
+ :time 32612840500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7130,
+ :sub-index 530}
+">3531 :write 0</div></a><a href="#i7133"><div class="op info" id="i7133" style="width:100;left:27878;top:8496;height:1280" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.621Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3602,
+ :time 32621209000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7133,
+ :sub-index 533}
+">3602 :write 3</div></a><a href="#i7134"><div class="op info" id="i7134" style="width:100;left:30846;top:8512;height:1264" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.626Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3709,
+ :time 32626795100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7134,
+ :sub-index 534}
+">3709 :read </div></a><a href="#i7137"><div class="op info" id="i7137" style="width:100;left:28090;top:8560;height:1216" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.637Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3607,
+ :time 32637555800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7137,
+ :sub-index 537}
+">3607 :read </div></a><a href="#i7138"><div class="op info" id="i7138" style="width:100;left:30952;top:8576;height:1200" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.639Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3714,
+ :time 32639814100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7138,
+ :sub-index 538}
+">3714 :write 3</div></a><a href="#i7140"><div class="op info" id="i7140" style="width:100;left:23956;top:8624;height:1152" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.656Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3536,
+ :time 32656896500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7140,
+ :sub-index 540}
+">3536 :read </div></a><a href="#i7143"><div class="op info" id="i7143" style="width:100;left:23002;top:8656;height:1120" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.663Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3525,
+ :time 32663638500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7143,
+ :sub-index 543}
+">3525 :write 3</div></a><a href="#i7144"><div class="op info" id="i7144" style="width:100;left:31058;top:8672;height:1104" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.664Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3719,
+ :time 32664741800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7144,
+ :sub-index 544}
+">3719 :cas [3 1]</div></a><a href="#i7146"><div class="op info" id="i7146" style="width:100;left:16324;top:8720;height:1056" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.673Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3453,
+ :time 32673854600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7146,
+ :sub-index 546}
+">3453 :read </div></a><a href="#i7147"><div class="op info" id="i7147" style="width:100;left:0;top:8752;height:16" title="Msg: [:isolated {&quot;n2&quot; #{&quot;n1&quot; &quot;n4&quot; &quot;n3&quot;}, &quot;n5&quot; #{&quot;n1&quot; &quot;n4&quot; &quot;n3&quot;}, &quot;n1&quot; #{&quot;n2&quot; &quot;n5&quot;}, &quot;n4&quot; #{&quot;n2&quot; &quot;n5&quot;}, &quot;n3&quot; #{&quot;n2&quot; &quot;n5&quot;}}]
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:27.675Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 32675272700,
+ :value [:isolated
+         {&quot;n2&quot; #{&quot;n1&quot; &quot;n4&quot; &quot;n3&quot;},
+          &quot;n5&quot; #{&quot;n1&quot; &quot;n4&quot; &quot;n3&quot;},
+          &quot;n1&quot; #{&quot;n2&quot; &quot;n5&quot;},
+          &quot;n4&quot; #{&quot;n2&quot; &quot;n5&quot;},
+          &quot;n3&quot; #{&quot;n2&quot; &quot;n5&quot;}}],
+ :index 7147,
+ :sub-index 547}
+">:nemesis :start <br /></div></a><a href="#i7149"><div class="op info" id="i7149" style="width:100;left:23426;top:8768;height:1008" title="Dur: 9 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.689Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3530,
+ :time 32689787400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7149,
+ :sub-index 549}
+">3530 :read </div></a><a href="#i7152"><div class="op info" id="i7152" style="width:100;left:28302;top:8800;height:976" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.697Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3612,
+ :time 32697011300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7152,
+ :sub-index 552}
+">3612 :write 0</div></a><a href="#i7154"><div class="op info" id="i7154" style="width:100;left:31164;top:8816;height:960" title="Dur: 8 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.701Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 3],
+ :process 3724,
+ :time 32701053000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7154,
+ :sub-index 554}
+">3724 :cas [3 3]</div></a><a href="#i7155"><div class="op info" id="i7155" style="width:100;left:24380;top:8848;height:928" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.704Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 3],
+ :process 3541,
+ :time 32704560800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7155,
+ :sub-index 555}
+">3541 :cas [1 3]</div></a><a href="#i7157"><div class="op info" id="i7157" style="width:100;left:31270;top:8896;height:880" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.709Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3729,
+ :time 32709013100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7157,
+ :sub-index 557}
+">3729 :write 1</div></a><a href="#i7159"><div class="op info" id="i7159" style="width:100;left:23850;top:8928;height:848" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.733Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3535,
+ :time 32733487900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7159,
+ :sub-index 559}
+">3535 :read </div></a><a href="#i7162"><div class="op info" id="i7162" style="width:100;left:16854;top:8976;height:800" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.744Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3458,
+ :time 32744033200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7162,
+ :sub-index 562}
+">3458 :read </div></a><a href="#i7165"><div class="op info" id="i7165" style="width:100;left:31376;top:8960;height:816" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.751Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 3,
+ :process 3734,
+ :time 32751765600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7165,
+ :sub-index 565}
+">3734 :write 3</div></a><a href="#i7166"><div class="op info" id="i7166" style="width:100;left:24804;top:9008;height:768" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.761Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3546,
+ :time 32761876300,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7166,
+ :sub-index 566}
+">3546 :cas [0 1]</div></a><a href="#i7168"><div class="op info" id="i7168" style="width:100;left:24274;top:9024;height:752" title="Dur: 16 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.766Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3540,
+ :time 32766008500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7168,
+ :sub-index 568}
+">3540 :write 2</div></a><a href="#i7170"><div class="op info" id="i7170" style="width:100;left:28514;top:9072;height:704" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.769Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3617,
+ :time 32769227800,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7170,
+ :sub-index 570}
+">3617 :write 2</div></a><a href="#i7171"><div class="op info" id="i7171" style="width:100;left:31482;top:9104;height:672" title="Dur: 7 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.774Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 4],
+ :process 3739,
+ :time 32774965400,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7171,
+ :sub-index 571}
+">3739 :cas [0 4]</div></a><a href="#i7173"><div class="op info" id="i7173" style="width:100;left:25228;top:9152;height:624" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.781Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3551,
+ :time 32781241200,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7173,
+ :sub-index 573}
+">3551 :write 1</div></a><a href="#i7175"><div class="op info" id="i7175" style="width:100;left:17384;top:9184;height:592" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.793Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [2 0],
+ :process 3463,
+ :time 32793497700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7175,
+ :sub-index 575}
+">3463 :cas [2 0]</div></a><a href="#i7177"><div class="op info" id="i7177" style="width:100;left:28726;top:9216;height:560" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.806Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3622,
+ :time 32806761900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7177,
+ :sub-index 577}
+">3622 :read </div></a><a href="#i7179"><div class="op info" id="i7179" style="width:100;left:31588;top:9248;height:528" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.813Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3744,
+ :time 32813731000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7179,
+ :sub-index 579}
+">3744 :read </div></a><a href="#i7182"><div class="op info" id="i7182" style="width:100;left:24698;top:9296;height:480" title="Dur: 5 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.821Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3545,
+ :time 32821622900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7182,
+ :sub-index 582}
+">3545 :cas [0 1]</div></a><a href="#i7185"><div class="op info" id="i7185" style="width:100;left:25652;top:9328;height:448" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.827Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [1 3],
+ :process 3556,
+ :time 32827971600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7185,
+ :sub-index 585}
+">3556 :cas [1 3]</div></a><a href="#i7186"><div class="op info" id="i7186" style="width:100;left:17914;top:9280;height:496" title="Dur: 13 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.829Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 1,
+ :process 3468,
+ :time 32829101900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7186,
+ :sub-index 586}
+">3468 :write 1</div></a><a href="#i7187"><div class="op info" id="i7187" style="width:100;left:31694;top:9344;height:432" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.833Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3749,
+ :time 32833789700,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7187,
+ :sub-index 587}
+">3749 :write 2</div></a><a href="#i7189"><div class="op info" id="i7189" style="width:100;left:25122;top:9408;height:368" title="Dur: 3 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.847Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 4,
+ :process 3550,
+ :time 32847498100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7189,
+ :sub-index 589}
+">3550 :write 4</div></a><a href="#i7191"><div class="op info" id="i7191" style="width:100;left:25970;top:9440;height:336" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.862Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3561,
+ :time 32862395900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7191,
+ :sub-index 591}
+">3561 :read </div></a><a href="#i7194"><div class="op info" id="i7194" style="width:100;left:28938;top:9488;height:288" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.867Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [0 1],
+ :process 3627,
+ :time 32867427100,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7194,
+ :sub-index 594}
+">3627 :cas [0 1]</div></a><a href="#i7195"><div class="op info" id="i7195" style="width:100;left:18444;top:9472;height:304" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.869Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 0,
+ :process 3473,
+ :time 32869107000,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7195,
+ :sub-index 595}
+">3473 :write 0</div></a><a href="#i7197"><div class="op info" id="i7197" style="width:100;left:25546;top:9536;height:240" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.877Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3555,
+ :time 32877593600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7197,
+ :sub-index 597}
+">3555 :write 2</div></a><a href="#i7199"><div class="op info" id="i7199" style="width:100;left:26288;top:9568;height:208" title="Dur: 4 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.883Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [4 1],
+ :process 3566,
+ :time 32883760500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7199,
+ :sub-index 599}
+">3566 :cas [4 1]</div></a><a href="#i7202"><div class="op info" id="i7202" style="width:100;left:18974;top:9600;height:176" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.891Z
+
+Op:
+{:type :info,
+ :f :write,
+ :value 2,
+ :process 3478,
+ :time 32891103900,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7202,
+ :sub-index 602}
+">3478 :write 2</div></a><a href="#i7203"><div class="op info" id="i7203" style="width:100;left:31800;top:9616;height:160" title="Dur: 6 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.895Z
+
+Op:
+{:type :info,
+ :f :cas,
+ :value [3 1],
+ :process 3754,
+ :time 32895042600,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7203,
+ :sub-index 603}
+">3754 :cas [3 1]</div></a><a href="#i7210"><div class="op info" id="i7210" style="width:100;left:29150;top:9664;height:112" title="Dur: 19 ms
+Err: &quot;indeterminate: Connection refused (Connection refused)&quot;
+Wall-clock Time: 2020-03-12T11:53:27.936Z
+
+Op:
+{:type :info,
+ :f :read,
+ :value nil,
+ :process 3632,
+ :time 32936407500,
+ :error &quot;indeterminate: Connection refused (Connection refused)&quot;,
+ :index 7210,
+ :sub-index 605}
+">3632 :read </div></a><a href="#i9390"><div class="op info" id="i9390" style="width:100;left:0;top:9696;height:16" title="Msg: nil
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:37.675Z
+
+Op:
+{:type :info,
+ :f :stop,
+ :process :nemesis,
+ :time 42675636400,
+ :index 9390,
+ :sub-index 606}
+">:nemesis :stop </div></a><a href="#i9816"><div class="op info" id="i9816" style="width:100;left:0;top:9712;height:16" title="Msg: :network-healed
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:39.737Z
+
+Op:
+{:type :info,
+ :f :stop,
+ :process :nemesis,
+ :time 44737422400,
+ :value :network-healed,
+ :index 9816,
+ :sub-index 607}
+">:nemesis :stop <br /></div></a><a href="#i12080"><div class="op info" id="i12080" style="width:100;left:0;top:9728;height:16" title="Msg: nil
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:49.737Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 54737633500,
+ :index 12080,
+ :sub-index 608}
+">:nemesis :start </div></a><a href="#i12112"><div class="op info" id="i12112" style="width:100;left:0;top:9744;height:16" title="Msg: [:isolated {&quot;n1&quot; #{&quot;n2&quot; &quot;n5&quot; &quot;n3&quot;}, &quot;n4&quot; #{&quot;n2&quot; &quot;n5&quot; &quot;n3&quot;}, &quot;n2&quot; #{&quot;n1&quot; &quot;n4&quot;}, &quot;n5&quot; #{&quot;n1&quot; &quot;n4&quot;}, &quot;n3&quot; #{&quot;n1&quot; &quot;n4&quot;}}]
+Err: nil
+Wall-clock Time: 2020-03-12T11:53:49.860Z
+
+Op:
+{:type :info,
+ :f :start,
+ :process :nemesis,
+ :time 54860658300,
+ :value [:isolated
+         {&quot;n1&quot; #{&quot;n2&quot; &quot;n5&quot; &quot;n3&quot;},
+          &quot;n4&quot; #{&quot;n2&quot; &quot;n5&quot; &quot;n3&quot;},
+          &quot;n2&quot; #{&quot;n1&quot; &quot;n4&quot;},
+          &quot;n5&quot; #{&quot;n1&quot; &quot;n4&quot;},
+          &quot;n3&quot; #{&quot;n1&quot; &quot;n4&quot;}}],
+ :index 12112,
+ :sub-index 609}
+">:nemesis :start <br /></div></a></div></body></html>
