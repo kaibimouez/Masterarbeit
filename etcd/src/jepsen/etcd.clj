@@ -19,10 +19,6 @@
             [jepsen.control.util :as cu]
             [jepsen.os.debian :as debian]))
 
-;(def dir     "/opt/etcd")
-;(def binary  "etcd")
-;(def logfile (str dir "/etcd.log"))
-;(def pidfile (str dir "/etcd.pid"))
 
 (defn node-url
   "An HTTP url for connecting to a node on a particular port."
@@ -56,38 +52,12 @@
       (c/su
         (info node "installing MongoDB-3.6.4")
         (let [url (str "http://downloads.mongodb.org/linux/mongodb-linux-x86_64-debian81-3.6.4.tgz")]
-;          (cu/install-archive! url dir)
 )
-
-      ;  (cu/start-daemon!
-      ;    {:logfile logfile
-      ;     :pidfile pidfile
-      ;     :chdir   dir}
-      ;    binary
-      ;    :--name                         (name node)
-      ;    :--listen-peer-urls             (peer-url   node)
-      ;    :--listen-client-urls           (client-url node)
-      ;    :--advertise-client-urls        (client-url node)
-      ;    :--initial-cluster-state        :new
-      ;    :--initial-advertise-peer-urls  (peer-url node)
-      ;    :--initial-cluster              (initial-cluster test)
-      ;    :--log-output                   :stdout)
-
         (Thread/sleep 5000)
 
 ))
-
     (teardown! [_ test node]
-    ;  (info node "tearing down etcd")
-    ;  (cu/stop-daemon! binary pidfile)
-    ;  (c/su
-     ;   (c/exec :rm :-rf dir))
 )
-
-   ; db/LogFiles
- ;   (log-files [_ test node]
-;      [logfile])
-
 ))
 
 (defn parse-long
@@ -139,9 +109,6 @@
 
          (catch (and (:errorCode %) (:message %)) e
            (assoc op :type crash :error e)))))
-
-    ; If our connection were stateful, we'd close it here.
-    ; Verschlimmbesserung doesn't hold a connection open, so we don't need to.
     (close! [_ _])
 
     (setup! [_ _])
